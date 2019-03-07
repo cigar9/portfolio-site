@@ -29,7 +29,7 @@ export default {
           github: null,
           link: null,
           description:
-            'このサイトです。Nuxtで作成して、Firebaseにてホスティングしています。。'
+            'このサイトです。Nuxtで作成して、Firebaseにてホスティングしています。'
         },
         {
           name: '技術ブログ',
