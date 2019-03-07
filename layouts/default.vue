@@ -40,6 +40,7 @@ html {
   box-sizing: border-box;
   font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
   line-height: 1.75;
+  background-color: #000;
 }
 
 *,
