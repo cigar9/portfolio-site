@@ -1,16 +1,30 @@
 <template>
-  <div class="wrapper" :class="{ 'has-hover' : $ua.isFromPc() }">
+  <div class="wrapper" :class="{ 'has-hover' : !isMobile }">
     <Navigation />
     <nuxt />
   </div>
 </template>
 
 <script>
+import MobileDetect from 'mobile-detect'
 import Navigation from '@/components/Navigation'
 
 export default {
   components: {
     Navigation
+  },
+  data() {
+    return {
+      isMobile: false
+    }
+  },
+  mounted() {
+    if (process.browser) {
+      const isMobile = new MobileDetect(window.navigator.userAgent).mobile()
+      if (isMobile) {
+        this.isMobile = true
+      }
+    }
   }
 }
 </script>

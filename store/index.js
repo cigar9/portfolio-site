@@ -14,7 +14,9 @@ export const mutations = {
 
 export const actions = {
   detectCurrentPage({ commit }) {
-    const path = location.pathname.replace('/', '')
+    const path = location.pathname.replace(/\//g, '')
+    // eslint-disable-next-line no-console
+    console.log(path)
     switch (path) {
       case 'about':
         commit('changeCurrentPage', 'about')
