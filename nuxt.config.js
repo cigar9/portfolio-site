@@ -69,6 +69,7 @@ module.exports = {
   },
 
   generate: {
+    dir: 'functions/static',
     routes(callback) {
       const projectPaths = ['city-s', 'ruf', 'canon']
       let routes = projectPaths.map(post => `/projects/${post}`)
