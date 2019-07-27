@@ -17,15 +17,13 @@ export const actions = {
     const path = location.pathname.replace(/\//g, '')
     // eslint-disable-next-line no-console
     console.log(path)
-    switch (path) {
-      case 'about':
-        commit('changeCurrentPage', 'about')
-        break
-      case 'projects':
-        commit('changeCurrentPage', 'projects')
-        break
-      default:
-        commit('changeCurrentPage', null)
+
+    if (path.match(/^projects/)) {
+      commit('changeCurrentPage', 'projects')
+    } else if (path === 'about') {
+      commit('changeCurrentPage', 'about')
+    } else {
+      commit('changeCurrentPage', null)
     }
   }
 }

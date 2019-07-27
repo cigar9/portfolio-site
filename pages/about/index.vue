@@ -102,7 +102,6 @@ export default {
         'JavaScript',
         'jQuery',
         'Vue.js',
-        'PHP',
         'Pug',
         'ejs',
         'Sass',
@@ -111,9 +110,12 @@ export default {
         'Git',
         'Gulp',
         'FLOCSS',
+        'Sketch',
+        'InVision',
         'Photoshop',
         'Illustrator',
-        'Adobe XD'
+        'Adobe XD',
+        'Figma'
       ],
       personalInterests: [
         'React.js',
@@ -121,8 +123,7 @@ export default {
         'Vue.js',
         'TypeScript',
         'AWS',
-        'Firebase',
-        'Laravel'
+        'Firebase'
       ],
       tools: ['PhpStorm', 'esa.io'],
       hobbies: ['DTM', 'キャンプ', 'ゲーム（主にPC）']

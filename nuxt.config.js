@@ -66,5 +66,13 @@ module.exports = {
         })
       }
     }
+  },
+
+  generate: {
+    routes(callback) {
+      const projectPaths = ['city-s', 'ruf', 'canon']
+      let routes = projectPaths.map(post => `/projects/${post}`)
+      callback(null, routes)
+    }
   }
 }

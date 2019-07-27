@@ -91,6 +91,7 @@ a:visited {
   font-size: 40px;
   letter-spacing: 0.1em;
   margin-bottom: 0.5em;
+  word-break: break-all;
   @media only screen and (max-width: 600px) {
     font-size: 30px;
   }
@@ -119,5 +120,20 @@ a:visited {
 .page-leave-active {
   opacity: 0;
   transform: scale(1.1);
+}
+
+.chip-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chip-list li {
+  font-size: 12px;
+  background: rgba(#333, 0.8);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 0.5em 1.5em;
+  border-radius: 4px;
 }
 </style>
