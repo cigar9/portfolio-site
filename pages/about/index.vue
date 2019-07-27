@@ -93,7 +93,7 @@ export default {
         },
         {
           term: '2019年5月～現在',
-          event: 'Reactとか書きたくて事業会社に転職して奮闘中。'
+          event: '自社サービスの開発に携わりたく、事業会社に転職して奮闘中。'
         }
       ],
       experiences: [
